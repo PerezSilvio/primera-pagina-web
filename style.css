@@ -1,0 +1,333 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0  auto;/*el 0 es para los margenes de arriba y abajo el auto lo que hace configura
+    automaticamente de acuerdo al tamaño de la pagina que en este caso es de 940px*/
+    /*la posicion relativa es en base a la posicion absocuta de la "caja del navegador"*/
+}
+nav{
+    position: absolute;
+    top: 115px;
+    right: 0px;
+
+}
+
+nav li{
+
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover/* hover captura el movimiento del mouse*/{
+
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0  auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px/*vertical*/ 20px;/*horizontal*/
+    box-sizing: border-box;
+    border: 2px solid #000000; /*-----> border-color: #000000; border-width: 2px;border-style: solid;*/
+    border-radius: 25px;
+}
+.productos li:hover{
+   border-color: #c78c19;
+   font-size: 50px;
+}
+
+.productos li:active/*active detecta el click del mouse*/{
+    border-color: darkgreen;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+   
+    font-size: 35px;
+}
+
+.produc-descripcion{
+    font-size: 18px;
+}
+.produc-precio{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.Copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+    
+}
+
+
+form{
+    margin: 40px 0;
+    
+}
+
+form label,form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.contacto{
+    width: 940px;
+    margin: 0  auto; 
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+
+    margin: 20px 0;
+}
+
+.enviar{
+
+    width: 40%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;/**transition hace la transicion mas lente en este caso del color naranja 
+    al naranja oscuro*/
+    cursor: pointer;
+}
+.enviar:hover{
+    
+    background: orangered;
+    transform: scale(1.2);
+}
+
+table{
+
+    margin: 40px 40px;
+}
+
+thead {
+
+    background: #222121;
+    color: white;
+    font-weight: bold;
+}
+td,th{
+    border: 1px #000000 solid;
+    padding: 10px 10px;
+
+}
+
+
+/*css de la pagina HOME*/
+
+.banner{
+
+    width: 100%;
+}
+
+.principal{
+
+    background: #fefefe;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulosPrincipal{
+    text-align: center;
+    font-size: 2em;/*2em significa dos vces su tamaño(dependiendo el tamaño de la fuente)*/
+    margin: 1em 0 1em;
+    clear: left;
+    text-shadow: 5px 2px 15px black;
+}
+/*
+.titulosPrincipal:first-letter{
+
+    font-weight: bolder;
+}
+
+.titulosPrincipal::before{
+
+    content: "[";
+}
+
+.titulosPrincipal::after{
+
+    content: "]";
+}
+
+
+p:first-line{
+
+    font-style: italic;
+    font-weight: bold;
+}
+*/
+.principal p{
+
+    margin: 0 0 1em;
+   /* text-align: center;*/
+}
+
+.principal strong{
+
+    font-weight: bold;
+}
+
+.principal em{
+
+    font-style: italic;
+}
+
+.utensilios{
+
+    width: 10%;
+    float: left;/*Tanto el float:left como el float: right sirven para que el elemento se destaque en la pantalla, la superficie del elemento continúa siendo utilizada y los otros elementos de texto o elementos en línea se posicionan alrededor de él.*/
+    margin: 0 15px 20px 0;
+}
+
+.mapaUbicacion{
+
+    padding: 3em 0;
+    background: linear-gradient(#fefefe,#888888) ;
+
+}
+
+.mapaUbicacion p{
+
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.mapa{
+   
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.diferenciales{
+
+    background: #888888;
+    padding: 3em 0;
+    
+}
+
+.contenidoDiferenciales{
+
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listaDiferenciales{
+
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.items{
+
+    line-height: 2;
+}
+
+.items:before{
+
+    content: "★";
+}
+
+.items:first-child{/*first-child lo que hace es aplicar los cambios a la primera etiqueta de la listas en este caso*/
+    font-weight: bold;
+
+}
+
+.imagendiferenciales{
+    width: 60%;
+    transition: 200ms;
+    box-shadow: 10px 10px 35px 10px black;/*los parametros son : (x ,y ,difuminacion, alcanze de la sombra, color) En box shadow se puede agregar la cantidad de sombra que se quiera*/
+}
+
+.imagendiferenciales:hover{
+    
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+/*@media  screen and (max-width:480px): esto quiere decir que si detecta una pantalla hasta 480px de ancho va aplicar los cambios(esto es la funcion responsiv)*/
+@media  screen and (max-width:912px){
+
+    h1{
+        text-align: center;
+    }
+
+
+    nav{
+
+        position: static;
+        text-align: center;
+    }
+   
+    .caja,.principal,.mapa,.contenidoDiferenciales,.video,.contacto,.productos{
+        width: auto;
+    }
+
+    .imagendiferenciales,.listaDiferenciales{
+
+        width: 100%;
+    }
+
+    .productos li{
+
+       width: 100%;
+        
+    }
+}
+    
